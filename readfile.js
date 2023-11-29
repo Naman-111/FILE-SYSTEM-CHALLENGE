@@ -10,7 +10,12 @@ const fs = require('fs');
 //    }
 //});
 
-fs.appendFile('createfile.js','This file is updated',(err) => {
+//fs.appendFile('createfile.js','\nThis file is updated',(err) => {
+//    if(err) throw err;
+//    console.log('Content Appended')
+//})
+
+fs.appendFile('newtest.txt','hello',(err)=>{
     if(err) throw err;
-    console.log('Content Appended')
+    console.log('Content Appended ')
 })
