@@ -15,7 +15,14 @@ const fs = require('fs');
 //    console.log('Content Appended')
 //})
 
-fs.appendFile('newtest.txt','hello',(err)=>{
+//fs.appendFile('newtest.txt','\nhello mr Naman Rana',(err)=>{
+//    if(err) throw err;
+//    console.log('Content Appended ')
+//})
+
+fs.rename('create.js','notcreate.js',(err)=> {
     if(err) throw err;
-    console.log('Content Appended ')
-})
+    console.log('File Renamed')
+});
+
+
